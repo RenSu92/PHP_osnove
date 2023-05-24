@@ -1,0 +1,78 @@
+Potrebno je setapirati www/html/backEndDeveloper tj.
+foldet 0001 conf da pointa na njegov index.html
+
+Pa otvoriti tj linkati VS code s tim projekt tak
+da otvoriš taj projekt.
+
+sudo vim /etc/apache2/sites-available/000-default.conf
+
+Uglavnom moraš napraviti da ti je dostupno uređivanje backaendDeveloper
+jer bi ti VS code radio grešku a to radiš s chmod 777
+
+Programu moraš objaviti da počinješ pisati php
+
+<?php
+
+?>
+
+Pokreće ga inetrprete -> ne vrti čitav već
+čita liniju po liniju, nije kao kompajler
+koji zahtjeva točnu sintaksu. PHP prolazi.
+
+To je server side programski jezik to znači da
+mu je namjena da se izvršava udaljeno tj. na serveru.
+
+<?php ?> je ustvari marker, pa nam služi za odljeljivanje
+php od ostalog koda, primjerice od html-a ili java script-a.
+Varijable kao u bash-u koriste dolar $ za eskpandiranje.
+
+PHP je kombinacija bash-a i C-a
+npr
+ $x=5;
+
+PHP ne zahtjeva dekalariranje podataka.
+Ali skriptni je jezik, ne vidim baš problem.
+
+
+PHP varijable
+
+Varijable su neke vrijednosti čiju je intencija mijenjati tijekom
+izvršavanja programa a ostalo su sintakse.
+
+U PHP-u oznake za vrijable moraju početi znakom $.
+Iza znaka dolara može početi slovom ili _.
+Ime varijable ne smije početi brojem, ali ga može zadržavati
+na bilo kojoj poziciji u programru.
+PHP kao i svi razlikuje velika i mala slova.
+Inicijalna vrijednost dodjedljuje se operatorom pridruživanja (=).
+
+PHP konstante
+
+Varijable imaju znak $ ali konstatne nemaju znak. Na taj način
+PHP razlikuje varijabli od konstanta.
+
+Konstante se definiraju ključnom riječi define
+
+PHP tipovi podataka
+
+U PHP ne postoje tipovi podataka.
+Ne morate definirati tip varijable prije njenog korištenja.
+
+char
+string -> niz char-ova, mogu biti i brojevi
+int
+long
+float
+double
+bool
+nizovi
+objekti
+
+Html ne prepoznaje escape character kao CLI php.
+
+Escape characteri se ponašaju kao u C-u.
+Jednostruki sve gledaju kao string
+a dvostrki omogućavaju interpreteciju posebnih znakova.
+Osnovni primjer je čitanje path-a njih bi trebali preko
+jednostrukih znakova.
+
